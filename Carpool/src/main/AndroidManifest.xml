@@ -26,6 +26,14 @@
                 android:name="com.buddies.carpool.GreetInNewActivity"
                 android:label="@string/greet_me_here" >
         </activity>
+        <activity
+                android:name="com.buddies.carpool.NeedACarActivity"
+                android:label="@string/greet_me_here" >
+        </activity>
+        <activity
+                android:name="com.buddies.carpool.HaveACarActivity"
+                android:label="@string/greet_me_here" >
+        </activity>
     </application>
 
 </manifest>

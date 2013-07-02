@@ -8,3 +8,4 @@ settings.gradle
 local.properties
 gradlew**
 .gradle/*
+*/build/**

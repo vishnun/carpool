@@ -14,6 +14,17 @@ public class HomeScreenActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
+
+        Button needACar = (Button) findViewById(R.id.need_car_button);
+        needACar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), NeedACarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
         Button submitBtn = (Button) findViewById(R.id.greet_here);
         Button newActivityBtn = (Button)findViewById(R.id.green_in_new_activity);
 
