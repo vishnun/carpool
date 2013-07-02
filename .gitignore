@@ -10,3 +10,4 @@ gradlew**
 .gradle/*
 */build/**
 /Carpool/build/**
+Carpool/
