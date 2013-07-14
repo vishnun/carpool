@@ -1,4 +1,4 @@
-package com.buddies.carpool;
+package com.buddies.PoolMeIn;
 
 import android.app.Activity;
 import android.os.Bundle;

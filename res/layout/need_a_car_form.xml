@@ -4,266 +4,115 @@
         android:layout_height="fill_parent"
         xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--<GridLayout-->
-            <!--android:layout_width="fill_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center_vertical|top"-->
-            <!--android:layout_alignParentEnd="false"-->
-            <!--android:layout_alignParentStart="false"-->
-            <!--android:columnCount="3"-->
-            <!--android:rowCount="5"-->
-            <!--android:textAlignment="gravity"-->
-            <!--android:alignmentMode="alignMargins"-->
-            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
-            <!--android:id="@+id/gridLayout">-->
 
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                 android:id="@+id/needACabFormTable"
-                 android:layout_width="fill_parent"
-                 android:layout_height="fill_parent" >
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:shrinkColumns="1" android:layout_marginTop="10dp">
         <TableRow
-                android:id="@+id/needCabTableRow1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="0dip" >
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
             <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="fill_parent"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/name_label"
-                    android:id="@+id/nameLabel"
-                    android:layout_marginRight="22dp"
-                    android:layout_centerVertical="true"
-                    android:layout_toLeftOf="@+id/Name"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:layout_gravity="center_horizontal|top"
-                    android:textAlignment="viewStart"
-                    android:gravity="center|right|fill_vertical"
-                    android:layout_rowSpan="1"
-                    android:layout_columnSpan="1"
-                    android:minHeight="60dp"/>
-
-            <EditText
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:inputType="textPersonName"
-                    android:hint="@string/name_hint"
-                    android:ems="10"
-                    android:id="@+id/Name"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_row="0"
-                    android:layout_column="1"
-                    android:layout_gravity="center_horizontal|bottom|left|top"
-                    android:layout_columnSpan="1"
-                    android:layout_rowSpan="1"
-                    />
-        </TableRow>
-        <TableRow
-                android:id="@+id/needCabTableRow2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="0dip" >
-
-            <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="fill_parent"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/source_label"
-                    android:id="@+id/fromLabel"
-                    android:layout_marginRight="22dp"
-                    android:layout_centerVertical="true"
-                    android:layout_toLeftOf="@+id/From"
-                    android:layout_row="1"
-                    android:layout_column="0"
-                    android:layout_gravity="center_horizontal|top"
-                    android:textAlignment="viewStart"
-                    android:gravity="center|right|fill_vertical"
-                    android:layout_rowSpan="1"
-                    android:layout_columnSpan="1"
-                    android:minHeight="60dp"/>
-
-            <EditText
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:inputType="text"
-                    android:hint="@string/source_hint"
-                    android:ems="10"
-                    android:id="@+id/inputFrom"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_row="1"
-                    android:layout_column="1"
-                    android:layout_gravity="center_horizontal|left|top"
-                    android:layout_columnSpan="1"
-                    android:layout_rowSpan="1"
-                    />
-        </TableRow>
-
-        <TableRow
-                android:id="@+id/needCabTableRow3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="0dip" >
-
-            <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="fill_parent"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/destination_label"
-                    android:id="@+id/toLabel"
-                    android:layout_marginRight="22dp"
-                    android:layout_centerVertical="true"
-                    android:layout_toLeftOf="@+id/To"
-                    android:layout_row="2"
-                    android:layout_column="0"
-                    android:layout_gravity="center_horizontal|top"
-                    android:textAlignment="viewStart"
-                    android:gravity="center|right|fill_vertical"
-                    android:layout_rowSpan="1"
-                    android:layout_columnSpan="1"
-                    android:minHeight="60dp"/>
-
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:id="@+id/name_label_in_need_form" android:layout_column="0"
+                    android:layout_marginRight="10dp" android:layout_marginLeft="10dp"/>
             <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="@string/destination_hint"
-                    android:ems="10"
-                    android:id="@+id/inputTo"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_row="2"
-                    android:layout_column="1"
-                    android:layout_gravity="left"
-                    android:layout_columnSpan="1"
-                    android:layout_rowSpan="1"
-                    />
+                    android:id="@+id/name_input_in_need_form" android:layout_column="1"
+                    android:hint="Enter your name" android:singleLine="true"/>
         </TableRow>
-
         <TableRow
-                android:id="@+id/needCabTableRow4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="0dip" >
-
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
             <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="fill_parent"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/gender"
-                    android:id="@+id/toLabel"
-                    android:layout_marginRight="22dp"
-                    android:layout_centerVertical="true"
-                    android:layout_toLeftOf="@+id/Gender"
-                    android:layout_row="3"
-                    android:layout_column="0"
-                    android:layout_gravity="center_horizontal|top"
-                    android:textAlignment="viewStart"
-                    android:gravity="center|right|fill_vertical"
-                    android:layout_rowSpan="1"
-                    android:layout_columnSpan="1"
-                    android:minHeight="60dp"/>
-
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/source_label"
+                    android:id="@+id/from_label_in_need_form" android:layout_column="0"
+                    android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/from_input_in_need_form" android:layout_column="1"
+                    android:hint="@string/source_hint"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/destination_label"
+                    android:id="@+id/to_label_in_need_form" android:layout_column="0"
+                    android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                    android:layout_gravity="top"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/to_input_in_need_form" android:layout_column="1"
+                    android:hint="Enter upto 5 Destination Landmarks seperated by comma" android:autoText="false"
+                    android:capitalize="words" android:longClickable="false"
+                    android:linksClickable="false" android:gravity="top" android:maxHeight="100dp"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:id="@+id/gender_label_in_need_form" android:layout_column="0"
+                    android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
             <RadioGroup
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_row="3"
-                    android:layout_column="1"
-                    android:orientation="horizontal"
-                    android:baselineAligned="false"
-                    >
-
-                <RadioButton
-                        android:layout_width="100dp"
-                        android:layout_height="60dp"
-                        android:text="@string/male"
-                        android:id="@+id/radioButton"
-                        android:layout_row="3"
-                        android:layout_column="1"
-                        android:checked="true"
-                        android:gravity="center_vertical"/>
-
+                    android:layout_height="wrap_content" android:layout_column="1" android:baselineAligned="false"
+                    android:clickable="false" android:layout_gravity="left" android:orientation="horizontal">
                 <RadioButton
                         android:layout_width="wrap_content"
-                        android:layout_height="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:id="@+id/gender_male_radio_in_need_form"
+                        android:checked="true" android:layout_gravity="left" android:layout_marginRight="20dp"
+                        android:layout_marginTop="6dp"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
                         android:text="@string/female"
-                        android:id="@+id/radioButton2"
-                        android:layout_row="5"
-                        android:layout_column="1"
-                        android:checked="false"
-                        android:gravity="center_vertical"/>
+                        android:id="@+id/gender_female_radio_in_need_form" android:layout_gravity="right"
+                        android:checked="false" android:layout_marginTop="8dp"/>
             </RadioGroup>
+
         </TableRow>
-
         <TableRow
-                android:id="@+id/needCabTableRow5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="0dip" >
-
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
             <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="fill_parent"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/phone_label"
-                    android:id="@+id/phoneLabel"
-                    android:layout_marginRight="22dp"
-                    android:layout_centerVertical="true"
-                    android:layout_toLeftOf="@+id/Phone"
-                    android:layout_row="4"
-                    android:layout_column="0"
-                    android:layout_gravity="center_horizontal|top"
-                    android:textAlignment="viewStart"
-                    android:gravity="center|right|fill_vertical"
-                    android:layout_rowSpan="1"
-                    android:layout_columnSpan="1"
-                    android:minHeight="60dp"/>
-
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_number"
+                    android:id="@+id/contact_input_in_need_form" android:layout_column="0"/>
             <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="phone"
-                    android:hint="@string/contact_number"
-                    android:ems="10"
-                    android:id="@+id/PhoneText"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_row="4"
-                    android:layout_column="1"
-                    android:layout_gravity="left"
-                    android:layout_columnSpan="1"
-                    android:layout_rowSpan="1"
-                    />
+                    android:id="@+id/contact_input_in_need_form" android:layout_column="1"
+                    android:hint="@string/contact_hint" android:autoText="false"
+                    android:capitalize="words" android:longClickable="false"
+                    android:linksClickable="false" android:gravity="top" android:phoneNumber="true"
+                    android:singleLine="true"/>
+
         </TableRow>
         <TableRow
-                android:id="@+id/needCabTableRow6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="0dip" >
-
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginTop="20dp">
             <Button
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/submit"
-                    android:id="@+id/submitBtn"
-                    android:layout_marginTop="28dp"
-                    android:layout_below="@+id/gridLayout"
-                    android:layout_centerHorizontal="true"
+                    android:id="@+id/submit_button_on_need_form" android:layout_column="0"
                     android:layout_span="2"/>
         </TableRow>
-
     </TableLayout>
-    <!--</GridLayout>-->
-
-
 </RelativeLayout>
