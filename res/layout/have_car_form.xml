@@ -1,7 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
 
-</TableLayout>
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:shrinkColumns="1" android:layout_marginTop="10dp">
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:id="@+id/name_label_in_have_form" android:layout_column="0"
+                    android:layout_marginRight="10dp" android:layout_marginLeft="10dp"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name_input_in_have_form" android:layout_column="1"
+                    android:hint="Enter your name" android:singleLine="true"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/source_label"
+                    android:id="@+id/from_label_in_have_form" android:layout_column="0"
+                    android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/from_input_in_have_form" android:layout_column="1"
+                    android:hint="@string/source_hint"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/destination_label"
+                    android:id="@+id/to_label_in_have_form" android:layout_column="0"
+                    android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                    android:layout_gravity="top"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/to_input_in_have_form" android:layout_column="1"
+                    android:hint="Enter upto 5 Destination Landmarks from where you can pick up on the way, seperated by comma" android:autoText="false"
+                    android:capitalize="words" android:longClickable="false"
+                    android:linksClickable="false" android:gravity="top" android:maxHeight="150dp"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    android:id="@+id/gender_label_in_have_form" android:layout_column="0"
+                    android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_column="1" android:baselineAligned="false"
+                    android:clickable="false" android:layout_gravity="left" android:orientation="horizontal"
+                    android:gravity="top">
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:id="@+id/gender_male_radio_in_have_form"
+                        android:checked="true" android:layout_gravity="left" android:layout_marginRight="20dp"
+                        />
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="@string/female"
+                        android:id="@+id/gender_female_radio_in_have_form" android:layout_gravity="center_horizontal"
+                        android:checked="false"/>
+            </RadioGroup>
+
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_number"
+                    android:id="@+id/contact_input_in_have_form" android:layout_column="0"
+                    android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contact_input_in_have_form" android:layout_column="1"
+                    android:hint="@string/contact_hint" android:autoText="false"
+                    android:capitalize="words" android:longClickable="false"
+                    android:linksClickable="false" android:gravity="top" android:phoneNumber="true"
+                    android:singleLine="true"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/car_model"
+                    android:id="@+id/car_model_label_in_have_form" android:layout_column="0"
+                    android:layout_marginRight="10dp" android:layout_marginLeft="10dp"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/car_model_input_in_have_form" android:layout_column="1"
+                    android:hint="@string/car_model_hint" android:singleLine="true"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/total_capacity_to_pool"
+                android:id="@+id/total_capacity" android:layout_column="0"
+                android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:maxWidth="100dp"
+                    />
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total_capacity_for_pool_in_have_form" android:layout_column="1"
+                    android:hint="@string/total_capacity_to_pool_hint" android:singleLine="false"
+                    android:inputType="number"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/Number_of_people_already_pooled"
+                    android:id="@+id/total_already_pooled" android:layout_column="0" android:maxWidth="100dp"
+                    android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_column="1">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male"
+                        android:id="@+id/number_of_male_occupants_in_have_form" android:layout_row="0" android:layout_column="0"
+                        android:layout_marginLeft="60dp" android:layout_marginRight="10dp" android:textColor="#05c211"/>
+                <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText" android:layout_row="1" android:layout_column="0"
+                        android:layout_marginLeft="50dp" android:inputType="number"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"
+                        android:id="@+id/number_of_female_occupants_in_have_form" android:layout_row="0" android:layout_column="1"
+                        android:layout_marginLeft="30dp" android:layout_marginRight="10dp" android:textColor="#d20f00"/>
+                <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText1" android:layout_row="1" android:layout_column="1"
+                        android:layout_gravity="bottom" android:layout_marginLeft="30dp" android:inputType="number"/>
+            </GridLayout>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginTop="20dp">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:id="@+id/submit_button_in_have_form" android:layout_column="0"
+                    android:layout_span="2"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

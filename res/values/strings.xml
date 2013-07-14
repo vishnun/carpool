@@ -19,5 +19,10 @@
     <string name="name_label">Name:</string>
     <string name="name">Name</string>
     <string name="contact_hint">Phone Number</string>
+    <string name="car_model">Car Model</string>
+    <string name="car_model_hint">Which Car Do you have</string>
+    <string name="Number_of_people_already_pooled">Number of people already pooled</string>
+    <string name="total_capacity_to_pool">Total Capacity of Car</string>
+    <string name="total_capacity_to_pool_hint">How many can you pool?</string>
 
 </resources>
