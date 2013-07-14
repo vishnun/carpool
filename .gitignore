@@ -1,12 +1,5 @@
-*.idea/*
-build/*
-.DS_Store
 *.iml
-gradle/**
-build.gradle
-settings.gradle
+*.idea/*
 local.properties
-gradlew**
-.gradle/*
-*/build/**
-/Carpool/build/**
+out/*
+gen/*
